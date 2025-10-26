@@ -5,24 +5,24 @@ Audio file: data/interview.wav
 Hello, Mrs. Stevens. My name is Jane Phillips. I'm the personnel director. I'm pleased to meet you. Please have a seat. Thank you. According to your resume, you have several years of office experience. Yes, I've had over 10 years experience. Tell me about your qualifications. I can type over 100 words per minute. I'm proficient in many computer programs. I have excellent interpersonal skills. I am well organized and I'm a very fast learner. I see that you have excellent references. Do you have any questions about the position? Yes. What are the responsibilities in this position? We're looking for someone to supervise two office clerks. Handle all the correspondence, arrange meetings, and manage the front office. Have you had any supervisory experience? Yes. I supervised three administrators in my last position. What are the office hours, Mrs. Phillips? 830-430, with an hour off for lunch. What are your salary expectations, Mrs. Stevens? I expect to be paid the going rate for this type of position. Can you tell me about the benefits you offer? Yes. We provide full medical and dental coverage, a pension plan, and a three-week holiday per year. That's very generous. When is the position available? We're hoping the successful applicant can start at the beginning of next month. We'll finish our interviews tomorrow and make a decision by the weekend. We'll contact you next week. Thank you very much. It's been a pleasure meeting you. I hope to hear from you soon.
 
 ==================================================
-DETAILED SEGMENTS:
+DETAILED SEGMENTS WITH SPEAKERS:
 ==================================================
 
-[00:00 - 00:08] Hello, Mrs. Stevens. My name is Jane Phillips. I'm the personnel director.
-[00:08 - 00:13] I'm pleased to meet you. Please have a seat. Thank you.
-[00:13 - 00:18] According to your resume, you have several years of office experience.
-[00:18 - 00:24] Yes, I've had over 10 years experience. Tell me about your qualifications.
-[00:24 - 00:30] I can type over 100 words per minute. I'm proficient in many computer programs.
-[00:30 - 00:37] I have excellent interpersonal skills. I am well organized and I'm a very fast learner.
-[00:37 - 00:43] I see that you have excellent references. Do you have any questions about the position?
-[00:43 - 00:47] Yes. What are the responsibilities in this position?
-[00:47 - 00:59] We're looking for someone to supervise two office clerks. Handle all the correspondence, arrange meetings, and manage the front office. Have you had any supervisory experience?
-[00:59 - 01:05] Yes. I supervised three administrators in my last position.
-[01:05 - 01:08] What are the office hours, Mrs. Phillips?
-[01:08 - 01:16] 830-430, with an hour off for lunch. What are your salary expectations, Mrs. Stevens?
-[01:16 - 01:22] I expect to be paid the going rate for this type of position. Can you tell me about the benefits you offer?
-[01:22 - 01:30] Yes. We provide full medical and dental coverage, a pension plan, and a three-week holiday per year.
-[01:30 - 01:34] That's very generous. When is the position available?
-[01:34 - 01:39] We're hoping the successful applicant can start at the beginning of next month.
-[01:39 - 01:45] We'll finish our interviews tomorrow and make a decision by the weekend. We'll contact you next week.
-[01:46 - 01:51] Thank you very much. It's been a pleasure meeting you. I hope to hear from you soon.
+[00:00 - 00:08] INTERVIEWER (conf: 0.95): Hello, Mrs. Stevens. My name is Jane Phillips. I'm the personnel director.
+[00:08 - 00:13] CANDIDATE (conf: 0.90): I'm pleased to meet you. Please have a seat. Thank you.
+[00:13 - 00:18] INTERVIEWER (conf: 0.95): According to your resume, you have several years of office experience.
+[00:18 - 00:24] CANDIDATE (conf: 0.90): Yes, I've had over 10 years experience. Tell me about your qualifications.
+[00:24 - 00:30] INTERVIEWER (conf: 0.90): I can type over 100 words per minute. I'm proficient in many computer programs.
+[00:30 - 00:37] CANDIDATE (conf: 0.85): I have excellent interpersonal skills. I am well organized and I'm a very fast learner.
+[00:37 - 00:43] INTERVIEWER (conf: 0.95): I see that you have excellent references. Do you have any questions about the position?
+[00:43 - 00:47] CANDIDATE (conf: 0.90): Yes. What are the responsibilities in this position?
+[00:47 - 00:59] INTERVIEWER (conf: 0.95): We're looking for someone to supervise two office clerks. Handle all the correspondence, arrange meetings, and manage the front office. Have you had any supervisory experience?
+[00:59 - 01:05] CANDIDATE (conf: 0.90): Yes. I supervised three administrators in my last position.
+[01:05 - 01:08] INTERVIEWER (conf: 0.90): What are the office hours, Mrs. Phillips?
+[01:08 - 01:16] CANDIDATE (conf: 0.85): 830-430, with an hour off for lunch. What are your salary expectations, Mrs. Stevens?
+[01:16 - 01:22] INTERVIEWER (conf: 0.95): I expect to be paid the going rate for this type of position. Can you tell me about the benefits you offer?
+[01:22 - 01:30] CANDIDATE (conf: 0.90): Yes. We provide full medical and dental coverage, a pension plan, and a three-week holiday per year.
+[01:30 - 01:34] INTERVIEWER (conf: 0.95): That's very generous. When is the position available?
+[01:34 - 01:39] CANDIDATE (conf: 0.90): We're hoping the successful applicant can start at the beginning of next month.
+[01:39 - 01:45] INTERVIEWER (conf: 0.95): We'll finish our interviews tomorrow and make a decision by the weekend. We'll contact you next week.
+[01:46 - 01:51] CANDIDATE (conf: 0.90): Thank you very much. It's been a pleasure meeting you. I hope to hear from you soon.
