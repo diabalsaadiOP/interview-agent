@@ -1,5 +1,7 @@
 # Core dependencies
 whisper
+
+openai-whisper
 langchain
 langchain-core
 langchain-google-genai
@@ -23,3 +25,4 @@ python-dotenv
 
 # Additional utilities
 typing-extensions
+ffmpeg
