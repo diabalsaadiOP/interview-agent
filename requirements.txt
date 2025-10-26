@@ -1,5 +1,28 @@
+# Core dependencies
+whisper
+
 openai-whisper
 langchain
 langchain-core
+langchain-google-genai
 requests
+
+# Google Gemini API (for LangChain)
+google-generativeai
+
+# Video/Audio processing
+moviepy
+ffmpeg-python
+
+# ML/AI models
+pyannote.audio
+torch
+torchaudio
+
+# Data validation and utilities
+pydantic
+python-dotenv
+
+# Additional utilities
+typing-extensions
 ffmpeg
