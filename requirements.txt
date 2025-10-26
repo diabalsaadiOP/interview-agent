@@ -1,0 +1,4 @@
+whisper
+langchain
+langchain-core
+requests
