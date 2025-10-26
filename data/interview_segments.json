@@ -2,91 +2,145 @@
     {
         "start": 0.0,
         "end": 8.0,
-        "text": "Hello, Mrs. Stevens. My name is Jane Phillips. I'm the personnel director."
+        "text": "Hello, Mrs. Stevens. My name is Jane Phillips. I'm the personnel director.",
+        "speaker": "INTERVIEWER",
+        "confidence": 0.95,
+        "reasoning": "Introduces themselves and asks initial question"
     },
     {
         "start": 8.0,
         "end": 13.0,
-        "text": "I'm pleased to meet you. Please have a seat. Thank you."
+        "text": "I'm pleased to meet you. Please have a seat. Thank you.",
+        "speaker": "CANDIDATE",
+        "confidence": 0.9,
+        "reasoning": "Responds with personal experience details"
     },
     {
         "start": 13.0,
         "end": 18.0,
-        "text": "According to your resume, you have several years of office experience."
+        "text": "According to your resume, you have several years of office experience.",
+        "speaker": "INTERVIEWER",
+        "confidence": 0.95,
+        "reasoning": "Asks about qualifications and experience"
     },
     {
         "start": 18.0,
         "end": 24.0,
-        "text": "Yes, I've had over 10 years experience. Tell me about your qualifications."
+        "text": "Yes, I've had over 10 years experience. Tell me about your qualifications.",
+        "speaker": "CANDIDATE",
+        "confidence": 0.85,
+        "reasoning": "Provides details about their experience"
     },
     {
         "start": 24.0,
         "end": 30.0,
-        "text": "I can type over 100 words per minute. I'm proficient in many computer programs."
+        "text": "I can type over 100 words per minute. I'm proficient in many computer programs.",
+        "speaker": "INTERVIEWER",
+        "confidence": 0.9,
+        "reasoning": "Asks about specific skills and qualifications"
     },
     {
         "start": 30.0,
         "end": 37.0,
-        "text": "I have excellent interpersonal skills. I am well organized and I'm a very fast learner."
+        "text": "I have excellent interpersonal skills. I am well organized and I'm a very fast learner.",
+        "speaker": "CANDIDATE",
+        "confidence": 0.8,
+        "reasoning": "Describes their skills and qualities"
     },
     {
         "start": 37.0,
         "end": 43.0,
-        "text": "I see that you have excellent references. Do you have any questions about the position?"
+        "text": "I see that you have excellent references. Do you have any questions about the position?",
+        "speaker": "INTERVIEWER",
+        "confidence": 0.95,
+        "reasoning": "Asks about job responsibilities and experience"
     },
     {
         "start": 43.0,
         "end": 47.0,
-        "text": "Yes. What are the responsibilities in this position?"
+        "text": "Yes. What are the responsibilities in this position?",
+        "speaker": "CANDIDATE",
+        "confidence": 0.85,
+        "reasoning": "Describes their supervisory experience"
     },
     {
         "start": 47.0,
         "end": 59.0,
-        "text": "We're looking for someone to supervise two office clerks. Handle all the correspondence, arrange meetings, and manage the front office. Have you had any supervisory experience?"
+        "text": "We're looking for someone to supervise two office clerks. Handle all the correspondence, arrange meetings, and manage the front office. Have you had any supervisory experience?",
+        "speaker": "INTERVIEWER",
+        "confidence": 0.9,
+        "reasoning": "Asks about job responsibilities and qualifications"
     },
     {
         "start": 59.0,
         "end": 65.0,
-        "text": "Yes. I supervised three administrators in my last position."
+        "text": "Yes. I supervised three administrators in my last position.",
+        "speaker": "CANDIDATE",
+        "confidence": 0.8,
+        "reasoning": "Describes their supervisory experience"
     },
     {
         "start": 65.0,
         "end": 68.0,
-        "text": "What are the office hours, Mrs. Phillips?"
+        "text": "What are the office hours, Mrs. Phillips?",
+        "speaker": "INTERVIEWER",
+        "confidence": 0.95,
+        "reasoning": "Asks about office hours and salary expectations"
     },
     {
         "start": 68.0,
         "end": 76.0,
-        "text": "830-430, with an hour off for lunch. What are your salary expectations, Mrs. Stevens?"
+        "text": "830-430, with an hour off for lunch. What are your salary expectations, Mrs. Stevens?",
+        "speaker": "CANDIDATE",
+        "confidence": 0.85,
+        "reasoning": "Describes their expected salary range"
     },
     {
         "start": 76.0,
         "end": 82.0,
-        "text": "I expect to be paid the going rate for this type of position. Can you tell me about the benefits you offer?"
+        "text": "I expect to be paid the going rate for this type of position. Can you tell me about the benefits you offer?",
+        "speaker": "INTERVIEWER",
+        "confidence": 0.9,
+        "reasoning": "Asks about job benefits and salary expectations"
     },
     {
         "start": 82.0,
         "end": 90.0,
-        "text": "Yes. We provide full medical and dental coverage, a pension plan, and a three-week holiday per year."
+        "text": "Yes. We provide full medical and dental coverage, a pension plan, and a three-week holiday per year.",
+        "speaker": "CANDIDATE",
+        "confidence": 0.8,
+        "reasoning": "Describes the job benefits"
     },
     {
         "start": 90.0,
         "end": 94.0,
-        "text": "That's very generous. When is the position available?"
+        "text": "That's very generous. When is the position available?",
+        "speaker": "INTERVIEWER",
+        "confidence": 0.95,
+        "reasoning": "Asks about position availability and timeline"
     },
     {
         "start": 94.0,
         "end": 99.0,
-        "text": "We're hoping the successful applicant can start at the beginning of next month."
+        "text": "We're hoping the successful applicant can start at the beginning of next month.",
+        "speaker": "CANDIDATE",
+        "confidence": 0.85,
+        "reasoning": "Describes the position availability"
     },
     {
         "start": 99.0,
         "end": 105.0,
-        "text": "We'll finish our interviews tomorrow and make a decision by the weekend. We'll contact you next week."
+        "text": "We'll finish our interviews tomorrow and make a decision by the weekend. We'll contact you next week.",
+        "speaker": "INTERVIEWER",
+        "confidence": 0.9,
+        "reasoning": "Asks about timeline and next steps"
     },
     {
         "start": 106.0,
         "end": 111.0,
-        "text": "Thank you very much. It's been a pleasure meeting you. I hope to hear from you soon."
+        "text": "Thank you very much. It's been a pleasure meeting you. I hope to hear from you soon.",
+        "speaker": "CANDIDATE",
+        "confidence": 0.8,
+        "reasoning": "Responds with appreciation for the opportunity"
     }
 ]

@@ -83,13 +83,16 @@ def save_transcript(transcript_data: Dict[str, Any], output_path: str = None) ->
             # Add segment timestamps if available
             if transcript_data.get("segments"):
                 f.write("\n\n" + "=" * 50 + "\n")
-                f.write("DETAILED SEGMENTS:\n")
+                f.write("DETAILED SEGMENTS WITH SPEAKERS:\n")
                 f.write("=" * 50 + "\n\n")
 
                 for i, segment in enumerate(transcript_data["segments"]):
                     start_time = format_timestamp(segment["start"])
                     end_time = format_timestamp(segment["end"])
-                    f.write(f"[{start_time} - {end_time}] {segment['text']}\n")
+                    speaker = segment.get("speaker", "UNKNOWN")
+                    confidence = segment.get("confidence", 0.0)
+                    
+                    f.write(f"[{start_time} - {end_time}] {speaker} (conf: {confidence:.2f}): {segment['text']}\n")
 
         print(f"Transcript saved to: {output_path}")
         return output_path

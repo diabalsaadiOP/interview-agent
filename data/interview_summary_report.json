@@ -1,0 +1,86 @@
+{
+    "candidate_name": "Mrs. Stevens",
+    "interview_duration": "111.0 seconds",
+    "total_segments": 18,
+    "candidate_speaking_time": 54.0,
+    "interviewer_speaking_time": 56.0,
+    "topic_analysis": {
+        "experience": {
+            "keyword_mentions": 3,
+            "relevant_segments": [
+                {
+                    "text": "Yes, I've had over 10 years experience. Tell me about your qualifications.",
+                    "timestamp": "18.0s - 24.0s",
+                    "confidence": 0.85
+                },
+                {
+                    "text": "Yes. What are the responsibilities in this position?",
+                    "timestamp": "43.0s - 47.0s",
+                    "confidence": 0.85
+                },
+                {
+                    "text": "Yes. I supervised three administrators in my last position.",
+                    "timestamp": "59.0s - 65.0s",
+                    "confidence": 0.8
+                }
+            ],
+            "ai_summary": "Based on the interview responses, the candidate appears to possess strong experience in their field, having accumulated over 10 years of professional background. The fact that they are able to confidently discuss their qualifications suggests a high level of self-awareness and expertise. Additionally, the mention of supervising three administrators indicates leadership skills and the ability to manage teams effectively.",
+            "strength_score": 9
+        },
+        "teamwork": {
+            "keyword_mentions": 2,
+            "relevant_segments": [
+                {
+                    "text": "I have excellent interpersonal skills. I am well organized and I'm a very fast learner.",
+                    "timestamp": "30.0s - 37.0s",
+                    "confidence": 0.8
+                },
+                {
+                    "text": "Yes. I supervised three administrators in my last position.",
+                    "timestamp": "59.0s - 65.0s",
+                    "confidence": 0.8
+                }
+            ],
+            "ai_summary": "Based on the interview responses, the candidate appears to have some strengths in teamwork. They mention having excellent interpersonal skills, suggesting they are able to build positive relationships with colleagues. However, the second response is more limited, indicating that the candidate may not have direct experience managing a team, as they only mentioned supervising administrators in their previous role.",
+            "strength_score": 6
+        },
+        "problem_solving": {
+            "keyword_mentions": 0,
+            "relevant_segments": [],
+            "ai_summary": "No clear evidence of problem_solving discussed in the interview.",
+            "strength_score": 1
+        },
+        "time_management": {
+            "keyword_mentions": 2,
+            "relevant_segments": [
+                {
+                    "text": "I have excellent interpersonal skills. I am well organized and I'm a very fast learner.",
+                    "timestamp": "30.0s - 37.0s",
+                    "confidence": 0.8
+                }
+            ],
+            "ai_summary": "Based on the interview response, the candidate demonstrates organizational skills, as they mention being \"well organized\". This suggests that they have some level of structure and system in place to manage their work and tasks effectively. However, there is no direct evidence of time management strategies or habits mentioned, such as prioritization, delegation, or productivity techniques. The candidate's claim of being a \"very fast learner\" may also imply an ability to adapt quickly, but it does not directly relate to time management skills.",
+            "strength_score": 5
+        }
+    },
+    "overall_summary": "Here is a comprehensive summary of the job interview conversation:\n\nThe position being discussed is an office supervisor role, which involves supervising two office clerks, handling correspondence, arranging meetings, and managing the front office.\n\nKey qualifications mentioned by the candidate include 11+ years of experience in office administration, excellent interpersonal skills, organizational abilities, and fast learning capabilities. The candidate also highlighted their supervisory experience from a previous position, where they supervised three administrators.\n\nImportant topics covered in the interview included job responsibilities, salary expectations, benefits, and availability to start. The interviewer provided details about the office hours, salary range, and comprehensive benefits package offered by the company.\n\nOverall, the candidate's suitability for the role appears strong, given their extensive experience, excellent interpersonal skills, and ability to learn quickly. However, it is unclear whether they have the specific supervisory experience required for the position, and further questioning would be necessary to determine their full fit for the job.",
+    "key_insights": {
+        "years_of_experience": "10 years",
+        "technical_skills": [
+            "Organization",
+            "Quick learning ability"
+        ],
+        "management_experience": "Supervised three administrators",
+        "salary_expectations": "Not specified",
+        "availability": "Available beginning of next month"
+    },
+    "recommendations": [
+        "✅ Strong candidate with well-rounded skills across multiple key areas",
+        "✅ Demonstrates substantial professional experience",
+        "✅ Shows strong leadership and team management capabilities",
+        "✅ Possesses relevant technical skills for the position",
+        "⚠️ Consider exploring problem_solving in follow-up interviews"
+    ],
+    "candidate_responses": 9,
+    "interviewer_questions": 9
+}
