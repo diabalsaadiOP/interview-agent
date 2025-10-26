@@ -2,3 +2,4 @@ whisper
 langchain
 langchain-core
 requests
+ffmpeg

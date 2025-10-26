@@ -7,6 +7,8 @@ multi_speaker_analyzer/
 │   ├── role_identification_agent.py
 │   ├── summarization_agent.py
 │   └── orchestrator_agent.py
+├── core/
+├── prompt/
 │
 ├── utils/
 │   ├── audio_utils.py
