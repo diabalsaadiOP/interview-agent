@@ -11,14 +11,13 @@ if __name__ == "__main__":
 
     try:
         success = orchestrator_agent.run(video_path)
-        
+
         if success:
             print("\n🎯 ACCESS YOUR DATA:")
             print("=" * 30)
             print(f"📁 Audio: {state.get_state('audio_path')}")
             print(f"📝 Transcript: {state.get_state('transcript_file')}")
             print(f"📋 JSON Segments: {state.get_state('segments_json_file')}")
-            print(f"📄 Analysis Report: {state.get_state('summary_text_file')}")
             print(f"🗣️  Language: {state.get_state('language')}")
             print(f"📊 Total Segments: {state.get_state('total_segments')}")
         else:
