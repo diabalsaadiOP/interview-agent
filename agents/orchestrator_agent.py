@@ -55,6 +55,12 @@ class OrchestratorAgent:
             output_md_path=sentiment_md_path
         )
 
+        # Set summary/analysis report, language, and total segments in state for ACCESS YOUR DATA
+        self.state.set_state('summary_json_file', None)  # Placeholder, set to actual summary if available
+        self.state.set_state('summary_text_file', None)  # Placeholder, set to actual analysis if available
+        self.state.set_state('language', transcript_data.get('language'))
+        self.state.set_state('total_segments', len(transcript_data.get('segments', [])))
+
         # Print summary
         print("📊 PIPELINE SUMMARY:")
         print("=" * 50)

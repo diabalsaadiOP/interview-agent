@@ -18,10 +18,9 @@ if __name__ == "__main__":
             print(f"📁 Audio: {state.get_state('audio_path')}")
             print(f"📝 Transcript: {state.get_state('transcript_file')}")
             print(f"📋 JSON Segments: {state.get_state('segments_json_file')}")
-            print(f"� Summary Report: {state.get_state('summary_json_file')}")
             print(f"📄 Analysis Report: {state.get_state('summary_text_file')}")
-            print(f"�🗣️  Language: {state.get_state('detected_language')}")
-            print(f"📊 Total Segments: {state.get_state('segment_count')}")
+            print(f"🗣️  Language: {state.get_state('language')}")
+            print(f"📊 Total Segments: {state.get_state('total_segments')}")
         else:
             print("❌ Pipeline failed")
 
