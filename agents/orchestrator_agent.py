@@ -32,10 +32,13 @@ class OrchestratorAgent:
         print(f"🔢 Number of segments: {len(transcript_data['segments'])}")
         print("=" * 50)
 
-        return {
-            "audio_path": audio_path,
-            "transcript_data": transcript_data,
-            "transcript_file": self.state.get_state('transcript_file'),
-            "segments_json_file": self.state.get_state('segments_json_file')
-        }
+        # Save additional orchestrator-level state
+        self.state.set_state("video_path", video_path)
+        self.state.set_state("audio_path", audio_path)
+        self.state.set_state("pipeline_completed", True)
+        self.state.set_state("detected_language", transcript_data['language'])
+        self.state.set_state("segment_count", len(transcript_data['segments']))
+
+        print("✅ All data saved to state management. Pipeline completed successfully!")
+        return True  # Simple success indicator
 
