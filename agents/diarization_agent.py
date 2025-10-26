@@ -28,16 +28,26 @@ class DiarizationAgent:
         self.state_manager = state_manager
         self.parser = SpeakerDiarizationParser()
 
-    def analyze_speakers(self, segments: List[Dict]) -> List[Dict]:
-        """Analyze transcript segments to identify speakers with confidence scores"""
 
-        # Create context from segments
-        transcript_text = " ".join([seg["text"] for seg in segments])
+    def analyze_speakers(self, segments: List[Dict], chunk_size: int = 8) -> List[Dict]:
+        """Analyze transcript segments to identify speakers with confidence scores, in chunks."""
 
-        # Prepare prompt for speaker diarization
-        prompt_template = PromptTemplate(
-            input_variables=["transcript", "segments"],
-            template="""
+        all_parsed_results = {"speaker_analysis": [], "summary": {}}
+        enriched_segments = []
+        total_segments = len(segments)
+        num_chunks = (total_segments + chunk_size - 1) // chunk_size
+
+        for chunk_idx in range(num_chunks):
+            chunk_start = chunk_idx * chunk_size
+            chunk_end = min((chunk_idx + 1) * chunk_size, total_segments)
+            chunk = segments[chunk_start:chunk_end]
+
+            transcript_text = " ".join([seg["text"] for seg in chunk])
+
+            # Prepare prompt for speaker diarization
+            prompt_template = PromptTemplate(
+                input_variables=["transcript", "segments"],
+                template="""
 You are an expert in analyzing interview conversations and identifying speakers.
 Analyze the following interview transcript and identify who is speaking in each segment.
 
@@ -74,41 +84,38 @@ Return ONLY a JSON object in this exact format:
             "reasoning": "Responds with personal experience details"
         }}
     ],
-    "summary": {{
-        "total_segments": 18,
-        "interviewer_segments": 9,
-        "candidate_segments": 9,
-        "average_confidence": 0.85
-    }}
+    "summary": {{}}
 }}
 """,
-        )
+            )
 
-        # Format segments for the prompt
-        segments_text = ""
-        for i, seg in enumerate(segments):
-            segments_text += f"Segment {i}: [{seg['start']:.1f}s-{seg['end']:.1f}s] \"{seg['text']}\"\n"
+            # Format segments for the prompt
+            segments_text = ""
+            for i, seg in enumerate(chunk):
+                segments_text += f"Segment {chunk_start + i}: [{seg['start']:.1f}s-{seg['end']:.1f}s] \"{seg['text']}\"\n"
 
-        prompt = prompt_template.format(
-            transcript=transcript_text, segments=segments_text
-        )
+            prompt = prompt_template.format(
+                transcript=transcript_text, segments=segments_text
+            )
 
-        print("🤖 Analyzing speakers with LLM...")
-        llm_response = query_ollama(prompt, model="llama3.2")
+            print(f"🤖 Analyzing speakers with LLM for segments {chunk_start + 1}-{chunk_end} of {total_segments}...")
+            llm_response = query_ollama(prompt, model="llama3.2")
+            print(f"✅ LLM response received for segments {chunk_start + 1}-{chunk_end}.")
 
-        # Parse the LLM response
-        parsed_result = self.parser.parse(llm_response)
+            # Parse the LLM response
+            parsed_result = self.parser.parse(llm_response)
 
-        if "error" in parsed_result:
-            print(f"⚠️  Warning: {parsed_result['error']}")
-            # Fallback: simple heuristic assignment
-            raise Exception("LLM diarization failed")
+            if "error" in parsed_result:
+                print(f"⚠️  Warning: {parsed_result['error']}")
+                raise Exception("LLM diarization failed")
 
-        # Merge speaker info back into segments
-        enriched_segments = self._merge_speaker_data(segments, parsed_result)
+            # Merge speaker info back into chunk
+            chunk_enriched = self._merge_speaker_data(chunk, parsed_result)
+            enriched_segments.extend(chunk_enriched)
+            all_parsed_results["speaker_analysis"].extend(parsed_result.get("speaker_analysis", []))
 
         # Save analysis to state
-        self.state_manager.set_state("speaker_analysis", parsed_result)
+        self.state_manager.set_state("speaker_analysis", all_parsed_results)
         self.state_manager.set_state("diarization_completed", True)
 
         return enriched_segments
